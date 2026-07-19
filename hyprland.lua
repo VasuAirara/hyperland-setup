@@ -21,18 +21,6 @@ require("modules.autostart")
 -- Create your files separately and then require them like this:
 -- require("myColors")
 
-
-
-
-
-
-
-
-
-
-
-
-
 -----------------------
 ----- PERMISSIONS -----
 -----------------------
@@ -75,12 +63,12 @@ hl.config({
         -- Please see https://wiki.hypr.land/Configuring/Advanced-and-Cool/Tearing/ before you turn this on
         allow_tearing = false,
 
-        layout = "dwindle",
+        layout = "sdwindle",
     },
 
     decoration = {
         rounding       = 5,
-        rounding_power = 5,
+        rounding_power = 1,
 
         -- Change transparency of focused and unfocused windows
         active_opacity   = 1.0,
@@ -95,7 +83,7 @@ hl.config({
 
         blur = {
             enabled   = true,
-            size      = 3,
+            size      = 20,
             passes    = 1,
             vibrancy  = 0.1696,
         },
@@ -180,7 +168,8 @@ hl.config({
 hl.config({
     misc = {
         force_default_wallpaper = -1,    -- Set to 0 or 1 to disable the anime mascot wallpapers
-        disable_hyprland_logo   = false, -- If true disables the random hyprland logo / anime girl background. :(
+        disable_splash_rendering = true,
+        disable_hyprland_logo   =true,--true disables the random hyprland logo / anime girl background. :(
     },
 })
 
@@ -202,7 +191,7 @@ hl.config({
         sensitivity = 0, -- -1.0 - 1.0, 0 means no modification.
 
         touchpad = {
-            natural_scroll = false,
+            natural_scroll = true,
         },
     },
 })
