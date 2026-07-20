@@ -28,6 +28,11 @@ hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
 hl.bind(mainMod .. " + W", hl.dsp.exec_cmd(browser))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(codeEditor))
+hl.bind(mainMod .. " + SHIFT + R", hl.dsp.exec_cmd("pkill waybar; waybar &"))
+
+-- Screenshot entire monitor
+hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -m output"))
+
 
 -- Move focus with mainMod + arrow keys
 hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))
