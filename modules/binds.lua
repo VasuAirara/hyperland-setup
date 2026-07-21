@@ -32,6 +32,7 @@ hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(codeEditor))
 hl.bind(mainMod .. " + A", hl.dsp.exec_cmd(musicPlayer))
 
 hl.bind(mainMod .. " + SHIFT + R", hl.dsp.exec_cmd("pkill waybar; waybar &"))
+hl.bind(mainMod .. " + SHIFT + D", hl.dsp.exec_cmd("pkill hyprpaper; hyprpaper &"))
 -- Toggle Rofi with Super + Space (Press and Release)
 hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd("pkill rofi || rofi -show drun -show-icons"))   
 -- Screenshot entire monitor
