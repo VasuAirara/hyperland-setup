@@ -8,6 +8,7 @@ local fileManager = "thunar"
 local menu        = "rofi -show drun -show-icons"
 local browser     = "brave"
 local codeEditor     = "code"
+local musicPlayer = "spotify"
 
 
 ---------------------
@@ -28,6 +29,8 @@ hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
 hl.bind(mainMod .. " + W", hl.dsp.exec_cmd(browser))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(codeEditor))
+hl.bind(mainMod .. " + A", hl.dsp.exec_cmd(musicPlayer))
+
 hl.bind(mainMod .. " + SHIFT + R", hl.dsp.exec_cmd("pkill waybar; waybar &"))
 -- Toggle Rofi with Super + Space (Press and Release)
 hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd("pkill rofi || rofi -show drun -show-icons"))   
